@@ -13,10 +13,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     //MARK: Properties
     @IBOutlet var nameTextField: UITextField!
-    
     @IBOutlet var mealNameLabel: UILabel!
-
     @IBOutlet var photoImageView: UIImageView!
+    @IBOutlet var ratingControl: RatingControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

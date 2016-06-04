@@ -19,29 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ves-pv-M40">
-                                <rect key="frame" x="20" y="25" width="374" height="449"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ves-pv-M40">
+                                <rect key="frame" x="20" y="25" width="374" height="365"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-0B-ron">
-                                        <rect key="frame" x="0.0" y="0.0" width="37" height="21"/>
+                                        <rect key="frame" x="169" y="0.0" width="37" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsd-J2-pEr">
-                                        <rect key="frame" x="0.0" y="31" width="373" height="30"/>
+                                        <rect key="frame" x="121" y="31" width="132" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ7-Dv-K8A">
-                                        <rect key="frame" x="0.0" y="71" width="151" height="30"/>
+                                        <rect key="frame" x="112" y="71" width="151" height="30"/>
                                         <state key="normal" title="Set Default Label Text"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NBG-sF-9hl"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="R5F-6n-zph">
-                                        <rect key="frame" x="0.0" y="111" width="200" height="200"/>
+                                        <rect key="frame" x="87" y="111" width="200" height="200"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="R5F-6n-zph" secondAttribute="height" multiplier="1:1" id="5Hl-07-ecT"/>
@@ -50,21 +50,18 @@
                                             <outletCollection property="gestureRecognizers" destination="PPe-0L-fRZ" appends="YES" id="809-KD-hhi"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="BhR-wk-6U8" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="321" width="240" height="128"/>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="BhR-wk-6U8" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="321" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="rsd-J2-pEr" firstAttribute="centerX" secondItem="ves-pv-M40" secondAttribute="centerX" id="Haq-DX-8fJ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ves-pv-M40" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="1EV-Gf-Wwh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ves-pv-M40" secondAttribute="trailing" id="ijd-s7-YAP"/>
-                            <constraint firstItem="ves-pv-M40" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nvK-3k-7FR"/>
+                            <constraint firstItem="ves-pv-M40" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="YEI-9U-eVX"/>
+                            <constraint firstItem="ves-pv-M40" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aOm-tO-p36"/>
+                            <constraint firstItem="ves-pv-M40" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pcz-qT-gEZ"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -72,6 +69,7 @@
                         <outlet property="mealNameLabel" destination="3yy-0B-ron" id="kLJ-Po-AXz"/>
                         <outlet property="nameTextField" destination="rsd-J2-pEr" id="U5W-OV-qjF"/>
                         <outlet property="photoImageView" destination="R5F-6n-zph" id="JU3-7A-5I7"/>
+                        <outlet property="ratingControl" destination="BhR-wk-6U8" id="tCl-yy-9nI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

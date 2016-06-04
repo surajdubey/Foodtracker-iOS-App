@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38B480281D0270570013B6FE /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B480271D0270570013B6FE /* RatingControl.swift */; };
+		38B4802A1D02A4720013B6FE /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B480291D02A4720013B6FE /* Meal.swift */; };
 		38C1B0231D01D3E000F6F925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1B0221D01D3E000F6F925 /* AppDelegate.swift */; };
 		38C1B0251D01D3E000F6F925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1B0241D01D3E000F6F925 /* ViewController.swift */; };
 		38C1B0281D01D3E000F6F925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C1B0261D01D3E000F6F925 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		38B480271D0270570013B6FE /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingControl.swift; path = customView/RatingControl.swift; sourceTree = "<group>"; };
+		38B480291D02A4720013B6FE /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meal.swift; path = model/Meal.swift; sourceTree = "<group>"; };
 		38C1B01F1D01D3DF00F6F925 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C1B0221D01D3E000F6F925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C1B0241D01D3E000F6F925 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				38C1B0241D01D3E000F6F925 /* ViewController.swift */,
 				38B480271D0270570013B6FE /* RatingControl.swift */,
 				38C1B0261D01D3E000F6F925 /* Main.storyboard */,
+				38B480291D02A4720013B6FE /* Meal.swift */,
 				38C1B0291D01D3E000F6F925 /* Assets.xcassets */,
 				38C1B02B1D01D3E000F6F925 /* LaunchScreen.storyboard */,
 				38C1B02E1D01D3E000F6F925 /* Info.plist */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B4802A1D02A4720013B6FE /* Meal.swift in Sources */,
 				38C1B0251D01D3E000F6F925 /* ViewController.swift in Sources */,
 				38B480281D0270570013B6FE /* RatingControl.swift in Sources */,
 				38C1B0231D01D3E000F6F925 /* AppDelegate.swift in Sources */,
